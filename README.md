@@ -181,7 +181,7 @@ in the pom.xml.
 
 ```
 mvn clean package && java -jar target/boot-react-example.jar
-
+```
 >>check localhost:8080 for frontend application to return "hello world" in web page.
  
 Note: if the front/backend application is not on the same deployment site, 

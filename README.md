@@ -179,14 +179,6 @@ in the pom.xml.
 </project>
 ```
 
-```
-mvn clean package && java -jar target/boot-react-example.jar
-```
->>check localhost:8080 for frontend application to return "hello world" in web page.
- 
-Note: if the front/backend application is not on the same deployment site, 
-a proxy is necessary in the package.json file of the frontend project.
-
 The parent pom.xml to build both the frontend and backend:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -206,3 +198,12 @@ The parent pom.xml to build both the frontend and backend:
  </properties>
 </project>
 ```
+
+```
+mvn clean package && cd back-end && java -jar back-end/target/boot-react-example.jar
+```
+>>check localhost:8080 for frontend application to return "hello world" in web page.
+ 
+Note: if the front/backend application is not on the same deployment site, 
+a proxy is necessary in the package.json file of the frontend project.
+

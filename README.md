@@ -200,7 +200,7 @@ The parent pom.xml to build both the frontend and backend:
 ```
 
 ```
-mvn clean package && cd back-end && java -jar back-end/target/boot-react-example.jar
+mvn clean package && java -jar back-end/target/boot-react-example.jar
 ```
 >>check localhost:8080 for frontend application to return "hello world" in web page.
  
